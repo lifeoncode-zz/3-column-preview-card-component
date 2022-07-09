@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+// colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75); // (paragraphs)
+$very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+// mixins
+@mixin flex($align:center, $justify:center, $direction:row, $wrap:wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($columns:1fr, $gap:20px) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+}

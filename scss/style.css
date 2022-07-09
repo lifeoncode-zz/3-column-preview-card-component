@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 690px) {
+  body {
+    display: block;
+    height: auto;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+}
+
+.container .card {
+  padding: 30px 40px;
+  color: #f2f2f2;
+}
+
+.container .card:nth-of-type(1) {
+  background-color: #e38826;
+}
+
+.container .card:nth-of-type(1) .btn {
+  color: #e38826;
+}
+
+.container .card:nth-of-type(2) {
+  background-color: #006970;
+}
+
+.container .card:nth-of-type(2) .btn {
+  color: #006970;
+}
+
+.container .card:nth-of-type(3) {
+  background-color: #004241;
+}
+
+.container .card:nth-of-type(3) .btn {
+  color: #004241;
+}
+
+.container .card h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 25px 0;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.container .card p {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.container .card .btn {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #f2f2f2;
+  margin-top: 80px;
+}
+
+.container .card .btn:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 500px) {
+  .container .card .btn {
+    margin-top: 50px;
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container .card {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container .card {
+    padding: 30px 80px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .card {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin: 20px auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
